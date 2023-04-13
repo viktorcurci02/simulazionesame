@@ -1,7 +1,7 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import { validate } from './validation.js'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -20,7 +20,7 @@ document.querySelector('#app').innerHTML = `
         </div>
         <div class="fieldContainer">
           <div class="field">
-            <input type="text" name="username" id="usernameField" class="inputField"/>
+            <input type="text" name="username" id="usernameField" class="inputField required"/>
           </div>
           <div class="validation">
             <p class="error hidden"> campo obbligatorio</p>
@@ -33,7 +33,7 @@ document.querySelector('#app').innerHTML = `
         </div>
         <div class="fieldContainer">
           <div class="field">
-            <input type="text" name="password" id="passwordField" class="inputField"/>
+            <input type="password" name="password" id="passwordField" class="inputField required"/>
           </div>
           <div class="validation">
             <p class="error hidden"> campo obbligatorio</p>
@@ -53,3 +53,4 @@ document.querySelector('#app').innerHTML = `
     </form>
     </div>
 `
+validate(document.querySelector("#loginForm"))
