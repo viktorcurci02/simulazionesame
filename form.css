@@ -1,0 +1,44 @@
+.formContainer{
+    width: 100%;
+}
+
+.formContainer label{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.formContainer input{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+.formContainer input[type="submit"]{
+
+    border: none;
+    font-weight: bold;
+    background: green;
+    color: white;
+    text-transform: uppercase;
+}
+
+.formContainer .validation p{
+    margin: 0;
+    font-size: 0.8rem;
+    color: red;
+}
+
+.formContainer .formRow{
+    margin: 20px 0; 
+}
+
+.formContainer .hidden{
+    display: none;
+}

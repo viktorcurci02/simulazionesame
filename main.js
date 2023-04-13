@@ -11,14 +11,45 @@ document.querySelector('#app').innerHTML = `
     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
       <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
     </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
+    <h1>Login</h1>
+    <div class="formContainer">
+    <form method="post" action="Login" id="loginForm">
+      <div class="formRow">
+        <div class="labelContainer">
+          <label for="usernameField"> Username</label>
+        </div>
+        <div class="fieldContainer">
+          <div class="field">
+            <input type="text" name="username" id="usernameField" class="inputField"/>
+          </div>
+          <div class="validation">
+            <p class="error hidden"> campo obbligatorio</p>
+          </div>
+        </div>
+      </div>
+      <div class="formRow">
+        <div class="labelContainer">
+          <label for="passwordField"> Password</label>
+        </div>
+        <div class="fieldContainer">
+          <div class="field">
+            <input type="text" name="password" id="passwordField" class="inputField"/>
+          </div>
+          <div class="validation">
+            <p class="error hidden"> campo obbligatorio</p>
+          </div>
+        </div>
+      </div>
+      <div class="formRow">
+        <div class="fieldContainer">
+          <div class="field">
+            <input type="submit" class="inputFieldButton"/>
+          </div>
+          <div class="validation">
+            <p class="error hidden"> credenziali errate</p>
+          </div>
+        </div>
+      </div>
+    </form>
     </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
 `
-
-setupCounter(document.querySelector('#counter'))
