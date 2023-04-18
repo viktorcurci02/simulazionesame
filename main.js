@@ -3,6 +3,10 @@ import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { validate } from './validation.js'
 
+/*const response = await fetch(`http://localhost:8080/api/utenti/login/${username}/${password}`);
+const apiGetAll = await fetch (`http://localhost:8080/api/utenti/findAll`);*/
+
+
 document.querySelector('#app').innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
